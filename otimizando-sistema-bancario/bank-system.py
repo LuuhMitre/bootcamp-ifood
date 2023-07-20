@@ -14,7 +14,6 @@ def menu():
     ==> """
     return input(textwrap.dedent(menu))
 
-
 def deposit(balance, deposit_value, statement, /):
     if deposit_value > 0:
         balance += deposit_value
@@ -43,9 +42,7 @@ def withdraw(*, balance, withdraw_value, statement, limit, num_withdraw, withdra
         return withdraw_value, balance
 
     else:
-        print('\n@@@ Operação falhou! O valor informado é inválido. @@@\n')
-   
-    
+        print('\n@@@ Operação falhou! O valor informado é inválido. @@@\n')    
 
 def show_statement(balance, /, *, statement):
     print('\n================ EXTRATO ================\n')
